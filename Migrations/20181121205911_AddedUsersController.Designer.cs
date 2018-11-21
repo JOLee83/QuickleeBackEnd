@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using QuickleeBackEnd;
@@ -9,9 +10,10 @@ using QuickleeBackEnd;
 namespace QuickleeBackEnd.Migrations
 {
     [DbContext(typeof(QuickleeDatabaseContext))]
-    partial class QuickleeDatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20181121205911_AddedUsersController")]
+    partial class AddedUsersController
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

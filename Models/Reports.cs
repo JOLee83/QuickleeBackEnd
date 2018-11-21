@@ -12,12 +12,14 @@ namespace QuickleeBackEnd.Models
 
     public DateTime ReportDate { get; set; }
 
-    public int InventoriesBeginId { get; set; }
+    public float InventoriesBegin { get; set; }
     //using to call Beginning Inventory total and date
-    public int InventoriesEndId { get; set; }
+    public float InventoriesEnd { get; set; }
     //using to call Ending Inventory total and date
-    public Inventories InventoriesBegin { get; set; }
-    public Inventories InventoriesEnd { get; set; }
+    public int? UsersId { get; set; }
+
+    public Users Users { get; set; }
+
 
   }
 }

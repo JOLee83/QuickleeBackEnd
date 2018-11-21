@@ -20,7 +20,7 @@ namespace QuickleeBackEnd.Controllers
       this._db = new QuickleeDatabaseContext();
     }
     [HttpGet]
-    // https://localhost:5001/api/Iventories 
+    // https://localhost:5001/api/iventories 
     public IEnumerable<Inventories> Get()
     {
       return _db.Inventories.Include(i => i.Users).OrderBy(o => o.InventoryDate);

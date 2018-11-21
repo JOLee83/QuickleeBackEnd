@@ -49,7 +49,7 @@ namespace QuickleeBackEnd
           new InventoryDetails { Id = -6, ItemsId = -3, ItemOnHandCount = 3f, InventoriesId = -2 }
       );
       modelBuilder.Entity<Reports>().HasData(
-          new Reports { Id = -1, Sales = 500.01f, Purchases = 100.01f, ReportDate = new DateTime(2018, 12, 01), InventoriesBeginId = -1, InventoriesEndId = -2 }
+          new Reports { Id = -1, Sales = 500.01f, Purchases = 100.01f, ReportDate = new DateTime(2018, 12, 01), InventoriesBegin = 26.61f, InventoriesEnd = 26.61f, UsersId = -1 }
       );
     }
     public DbSet<Users> Users { get; set; }
