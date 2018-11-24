@@ -9,7 +9,8 @@ namespace QuickleeBackEnd.Models
     public string ItemName { get; set; }
 
     public float ItemPrice { get; set; }
-    //will updated through Order Details
+
+    public float Count { get; set; }
     public int? UsersId { get; set; }
 
     public Users Users { get; set; }

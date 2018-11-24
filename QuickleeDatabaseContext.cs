@@ -32,9 +32,9 @@ namespace QuickleeBackEnd
         new Users { Id = -1, CompanyName = "ABC Inc" }
       );
       modelBuilder.Entity<Items>().HasData(
-        new Items { Id = -1, ItemName = "Item A", ItemPrice = 1.99f, UsersId = -1 },
-        new Items { Id = -2, ItemName = "Item B", ItemPrice = 2.99f, UsersId = -1 },
-        new Items { Id = -3, ItemName = "Item C", ItemPrice = 3.99f, UsersId = -1 }
+        new Items { Id = -1, ItemName = "Item A", Count = 0, ItemPrice = 1.99f, UsersId = -1 },
+        new Items { Id = -2, ItemName = "Item B", Count = 0, ItemPrice = 2.99f, UsersId = -1 },
+        new Items { Id = -3, ItemName = "Item C", Count = 0, ItemPrice = 3.99f, UsersId = -1 }
       );
       modelBuilder.Entity<Inventories>().HasData(
           new Inventories { Id = -1, InventoryTotal = 26.91f, InventoryDate = new DateTime(2018, 11, 01), UsersId = -1 },
