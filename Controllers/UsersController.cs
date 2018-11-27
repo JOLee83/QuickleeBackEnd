@@ -25,5 +25,13 @@ namespace QuickleeBackEnd.Controllers
     {
       return _db.Users.OrderBy(o => o.Id);
     }
+    [HttpPut("{usersId}")]
+    public ActionResult<Users> Put([FromRoute] int usersId, [FromBody] Users updatedData)
+    {
+      var users = _db.Users.FirstOrDefault(user => user.Id == usersId);
+      users.CompanyName = updatedData.CompanyName;
+      _db.SaveChanges();
+      return updatedData;
+    }
   }
 }
